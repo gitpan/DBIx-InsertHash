@@ -1,0 +1,37 @@
+NAME
+    DBIx::InsertHash - insert/update a database record with a hash
+
+VERSION
+    This document describes DBIx::InsertHash version 0.001
+
+SYNOPSIS
+        use DBIx::InsertHash;
+
+        DBIx::InsertHash->insert($dbh, 'table',
+                                 {USERNAME => 'foo',
+                                  PASSWORD => 'bar',
+                                 });
+
+        ###TODO### update() is coming in the next version
+
+DESCRIPTION
+    If you have data in a hash (which keys are matching the column names)
+    and want to insert it in a database, then this is the right module for
+    you. It frees you from having to construct the SQL statement.
+
+INTERFACE
+  insert
+    Insert hash in database.
+
+    dbh DBI database handle (you have to connect yourself).
+
+    table
+        Table name.
+
+    hash
+        Data hash. The keys have to match with the column names of your
+        table.
+
+AUTHOR
+    Uwe Voelker, <uwe.voelker@gmx.de>
+
