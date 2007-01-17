@@ -3,9 +3,8 @@ use strict;
 use warnings;
 use ExtUtils::MakeMaker;
 
-eval {
-    use ExtUtils::MakeMaker::Coverage;
-
+eval "use ExtUtils::MakeMaker::Coverage";
+unless ($@) {
     ExtUtils::MakeMaker::Coverage->config->cover_pod(0);
 };
 

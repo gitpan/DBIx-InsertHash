@@ -2,7 +2,7 @@ NAME
     DBIx::InsertHash - insert/update a database record with a hash
 
 VERSION
-    This document describes DBIx::InsertHash version 0.001
+    This document describes DBIx::InsertHash version 0.002
 
 SYNOPSIS
         use DBIx::InsertHash;

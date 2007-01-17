@@ -1,5 +1,5 @@
 package DBIx::InsertHash;
-$VERSION = 0.001;
+$VERSION = 0.002;
 
 =head1 NAME
 
@@ -7,7 +7,7 @@ DBIx::InsertHash - insert/update a database record with a hash
 
 =head1 VERSION
 
-This document describes DBIx::InsertHash version 0.001
+This document describes DBIx::InsertHash version 0.002
 
 =head1 SYNOPSIS
 

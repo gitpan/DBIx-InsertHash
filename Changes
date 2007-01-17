@@ -1,5 +1,8 @@
 Revision history for DBIx::InsertHash
 
+0.002 2007-XX-XX
+    - Fixed Makefile.PL (error without ExtUtils::MakeMaker::Coverage)
+
 0.001 2007-01-16
     - Initial release.
     - update() is missing (coming soon)
