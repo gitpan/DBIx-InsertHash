@@ -1,12 +1,16 @@
+#!/perl
 
 use strict;
 use warnings;
+
 use ExtUtils::MakeMaker;
+
 
 eval "use ExtUtils::MakeMaker::Coverage";
 unless ($@) {
     ExtUtils::MakeMaker::Coverage->config->cover_pod(0);
 };
+
 
 WriteMakefile(
               NAME          => 'DBIx::InsertHash',
@@ -23,3 +27,4 @@ WriteMakefile(
               clean         => {FILES => 'lib/DBIx/InsertHash.pm-*'
                                },
              );
+
