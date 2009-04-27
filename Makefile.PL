@@ -1,30 +1,20 @@
-#!/perl
 
 use strict;
 use warnings;
 
 use ExtUtils::MakeMaker;
 
-
-eval "use ExtUtils::MakeMaker::Coverage";
-unless ($@) {
-    ExtUtils::MakeMaker::Coverage->config->cover_pod(0);
-};
-
-
 WriteMakefile(
-              NAME          => 'DBIx::InsertHash',
-              AUTHOR        => 'Uwe Voelker <uwe.voelker@gmx.de>',
-              VERSION_FROM  => 'lib/DBIx/InsertHash.pm',
-              ABSTRACT_FROM => 'lib/DBIx/InsertHash.pm',
-              PL_FILES      => {},
-              PREREQ_PM     => {'Test::Deep' => 0,
-                                'Test::More' => 0,
-                               },
-              dist          => {COMPRESS => 'gzip -9f',
-                                SUFFIX   => 'gz',
-                               },
-              clean         => {FILES => 'lib/DBIx/InsertHash.pm-*'
-                               },
-             );
-
+  DISTNAME  => 'DBIx-InsertHash',
+  NAME      => 'DBIx::InsertHash',
+  AUTHOR    => 'Uwe\ Voelker\ \<uwe\.voelker\@gmx\.de\>',
+  ABSTRACT  => 'insert/update a database record from a hash',
+  VERSION   => '0.011',
+  EXE_FILES => [ qw() ],
+  (eval { ExtUtils::MakeMaker->VERSION(6.21) } ? (LICENSE => 'perl') : ()),
+  PREREQ_PM    => {
+    "Test::More" => '0',
+    "Class::Accessor" => '0',
+    "Test::Deep" => '0',
+  },
+);

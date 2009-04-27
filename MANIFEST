@@ -1,11 +1,13 @@
 Changes
-lib/DBIx/InsertHash.pm
-Makefile.PL
+LICENSE
 MANIFEST
+META.yml
+Makefile.PL
 README
-t/00.load.t
+TODO
+dist.ini
+lib/DBIx/InsertHash.pm
+t/00-load.t
 t/01-insert.t
 t/02-update.t
 t/DBIx/InsertHash/DBI.pm
-TODO
-META.yml                                 Module meta-data (added by MakeMaker)

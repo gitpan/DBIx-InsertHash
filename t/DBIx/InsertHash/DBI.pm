@@ -1,4 +1,6 @@
 package DBIx::InsertHash::DBI;
+our $VERSION = '0.011';
+
 
 use strict;
 use warnings;

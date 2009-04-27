@@ -1,3 +1,4 @@
+- 'SELECT @@IDENTITY' when last_insert_id fails
 - tests with databases (MySQL, SQLite)
 - quote also tablename?
 - do the quotes harm other databases?

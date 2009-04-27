@@ -1,5 +1,9 @@
 Revision history for DBIx::InsertHash
 
+0.011 2009-04-27
+    - fixed missing dependency (Class::Accessor)
+    - changed repository to git
+
 0.010 2007-03-09  ### A P I   C H A N G E ###
     - API change: reversed order of params in insert()
     - Quoting can be controlled

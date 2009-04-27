@@ -1,5 +1,6 @@
 package DBIx::InsertHash;
-$VERSION = 0.010;
+our $VERSION = '0.011';
+
 
 =head1 NAME
 
@@ -7,9 +8,7 @@ DBIx::InsertHash - insert/update a database record from a hash
 
 =head1 VERSION
 
-This document describes DBIx::InsertHash version 0.010
-
-B<API CHANGE IN 0.010:> The order of params in L<insert> was reversed.
+version 0.011
 
 =head1 SYNOPSIS
 
@@ -71,7 +70,7 @@ quoting options.
 Turn quoting of column names on (off by default). This switch affects
 all column names (see L<quote_func> below to only quote specific names).
 
-If you use MySQL quoting is recommended. It is needed when column names
+If you use MySQL, quoting is recommended. It is needed when column names
 clash with reserved words.
 
 =item quote_char (STRING)
@@ -246,6 +245,16 @@ sub update {
 
 1;
 
+__END__
+
+=pod
+
+=head1 REPOSITORY
+
+    http://github.com/uwe/dbix-inserthash/tree/master
+
 =head1 AUTHOR
 
 Uwe Voelker, <uwe.voelker@gmx.de>
+
+=cut
